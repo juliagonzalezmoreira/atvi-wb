@@ -30,4 +30,49 @@ export default class CadastroCliente extends Cadastro {
         console.log(`\nCadastro concluído :)\n`);
     }
 
+    public update(): void{
+        console.log(`\nInício da atualização do cliente`);
+
+       let cpfClienteUpdate = this.entrada.receberTexto('Por favor inserir o CPF do cliente a ser atualizado: ')
+       let clienteUpdate= this.clientes.find(cliente => cliente.getCpf.getValor == cpfClienteUpdate)
+
+        if(clienteUpdate){
+                console.log(`Opções:`);
+                console.log(`1 - Mudar nome`);
+                console.log(`2 - Mudar nome social`);
+                let opcaoUpdate = this.entrada.receberNumero(`Por favor, escolha uma opção: `)
+
+                switch (opcaoUpdate) {
+                    case 1:
+                        let nomeNovo = this.entrada.receberTexto(`Por favor informe o novo nome do cliente: `);
+                        clienteUpdate.nome = nomeNovo;
+                        break;
+                    case 2:
+                        let nomeSocialNovo = this.entrada.receberTexto(`Por favor informe o novo nome social do cliente: `);
+                        clienteUpdate.nomeSocial = nomeSocialNovo;
+                        break;
+                    default:
+                        console.log(`Operação não entendida :(`)
+                }
+                console.log(`\nAtualização concluída :)\n`);
+        } else {
+            console.log(`\nCliente não encontrado :(\n`);
+        }
+    }
+
+    public delete(): void{
+        console.log(`\nInício da exclusão do cliente`);
+
+        let cpfClienteExcluido = this.entrada.receberTexto('Por favor inserir o CPF do cliente a ser excluído: ')
+        let clienteDeleteIndex = this.clientes.findIndex(cliente => cliente.getCpf.getValor == cpfClienteExcluido)
+
+        if(clienteDeleteIndex != -1){
+            this.clientes.splice(clienteDeleteIndex, 1)
+            console.log(`Cliente excluído com sucesso!\n`);
+        } else{
+            console.log("Cliente não encontrado.\n");
+
+        }
+    }
+
 }

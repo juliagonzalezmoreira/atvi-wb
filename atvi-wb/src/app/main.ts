@@ -51,6 +51,14 @@ while (execucao) {
             let listagemServicos = new ListagemServicos(empresa.getServicos)
             listagemServicos.listar()
             break;
+        case 7:
+            let atualizarCliente = new CadastroCliente(empresa.getClientes)
+            atualizarCliente.update()
+            break;
+        case 8:
+            let deletarClinte = new CadastroCliente(empresa.getClientes)
+            deletarClinte.delete()
+            break;
         case 0:
             execucao = false
             console.log(`Até mais`)

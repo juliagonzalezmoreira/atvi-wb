@@ -36,6 +36,8 @@ var CadastroProduto = /** @class */ (function (_super) {
         produto.nome = nomeProduto;
         this.produtos.push(produto);
     };
+    CadastroProduto.prototype.update = function () { };
+    CadastroProduto.prototype.delete = function () { };
     return CadastroProduto;
 }(cadastro_1.default));
 exports.default = CadastroProduto;

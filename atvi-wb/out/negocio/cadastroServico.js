@@ -36,6 +36,8 @@ var CadastroServico = /** @class */ (function (_super) {
         servicos.nome = nomeServico;
         this.servicos.push(servicos);
     };
+    CadastroServico.prototype.update = function () { };
+    CadastroServico.prototype.delete = function () { };
     return CadastroServico;
 }(cadastro_1.default));
 exports.default = CadastroServico;

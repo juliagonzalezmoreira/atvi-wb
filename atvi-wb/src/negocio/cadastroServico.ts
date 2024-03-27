@@ -17,6 +17,9 @@ export default class CadastroServico extends Cadastro {
         let servicos = new Servico()
         servicos.nome = nomeServico
         this.servicos.push(servicos)
-
     }
+
+    public update(): void {}
+
+    public delete(): void {}
 }
