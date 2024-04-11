@@ -56,8 +56,8 @@ while (execucao) {
             atualizarCliente.update()
             break;
         case 8:
-            let deletarClinte = new CadastroCliente(empresa.getClientes)
-            deletarClinte.delete()
+            let deletarCliente = new CadastroCliente(empresa.getClientes)
+            deletarCliente.delete()
             break;
         case 0:
             execucao = false
