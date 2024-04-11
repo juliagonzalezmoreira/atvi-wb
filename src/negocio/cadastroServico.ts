@@ -14,8 +14,10 @@ export default class CadastroServico extends Cadastro {
     public cadastrar(): void {
         console.log(`\nInício do cadastro de um novo serviço`)
         let nomeServico = this.entrada.receberTexto(`Digite o nome do novo serviço: `)
-        let servicos = new Servico()
+        const valorServico = this.entrada.receberNumero('Por favor, digite o valor do serviço:');
+        let servicos = new Servico(nomeServico, valorServico)
         servicos.nome = nomeServico
+        servicos.valor = valorServico
         this.servicos.push(servicos)
     }
 }
