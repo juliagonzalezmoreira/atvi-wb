@@ -17,5 +17,20 @@ export default class ListagemClientes extends Listagem {
         });
         console.log(`\n`);
     }
-    
+
+    public listarDezClientesMaisConsumiramQuantidade(): void {
+
+    }
+
+    public listarClientesPorGenero(): void {
+
+    }
+
+    public listarClientesMenosConsumiram(): void {
+
+    }
+
+    public listarCincoClientesMaisConsumiramValor(): void {
+
+    }
 }

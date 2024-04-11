@@ -18,8 +18,4 @@ export default class CadastroServico extends Cadastro {
         servicos.nome = nomeServico
         this.servicos.push(servicos)
     }
-
-    public update(): void {}
-
-    public delete(): void {}
 }

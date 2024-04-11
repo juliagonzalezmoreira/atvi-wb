@@ -7,16 +7,18 @@ import Telefone from "./telefone"
 export default class Cliente {
     public nome: string
     public nomeSocial: string
+    private genero: "Feminino | Masculino"
     private cpf: CPF
     private rgs: Array<RG>
     private dataCadastro: Date
     private telefones: Array<Telefone>
     private produtosConsumidos: Array<Produto>
     private servicosConsumidos: Array<Servico>
-    constructor(nome: string, nomeSocial: string, cpf: CPF) {
+    constructor(nome: string, nomeSocial: string, cpf: CPF, genero: "Feminino | Masculino") {
         this.nome = nome
         this.nomeSocial = nomeSocial
         this.cpf = cpf
+        this.genero = genero
         this.rgs = []
         this.dataCadastro = new Date()
         this.telefones = []

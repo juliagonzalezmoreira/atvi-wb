@@ -2,6 +2,7 @@ import Produto from "../modelo/produto";
 import Listagem from "./listagem";
 
 export default class ListagemProdutos extends Listagem{
+  
     private produtos: Array<Produto>
     constructor(produtos: Array<Produto>) {
         super()
@@ -16,4 +17,11 @@ export default class ListagemProdutos extends Listagem{
         console.log(`\n`);
     }
 
+    public maisConsumidos(): void {
+
+    }
+
+    public maisConsumidosPorGenero(): void {
+
+    }
 }

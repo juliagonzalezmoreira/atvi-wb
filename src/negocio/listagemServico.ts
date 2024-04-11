@@ -16,4 +16,11 @@ export default class ListagemServicos extends Listagem{
         console.log(`\n`);
     }
 
+    public maisConsumidos(): void {
+
+    }
+
+    public maisConsumidosPorGenero(): void {
+        
+    }
 }

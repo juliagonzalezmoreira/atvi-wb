@@ -18,8 +18,5 @@ export default class CadastroProduto extends Cadastro {
         produto.nome = nomeProduto
         this.produtos.push(produto)
     }
-    public  update(): void {}
-
-    public  delete(): void {}
 
 }
