@@ -62,7 +62,7 @@ while (execucao) {
             break;
         case 0:
             execucao = false;
-            console.log("At\u00E9 mais");
+            console.log("Até mais");
             break;
         default:
             console.log("Opera\u00E7\u00E3o n\u00E3o entendida :(");

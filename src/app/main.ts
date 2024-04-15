@@ -69,7 +69,7 @@ while (execucao) {
             break;
         case 0:
             execucao = false;
-            console.log("At\u00E9 mais");
+            console.log("Até mais");
             break;
         default:
             console.log(`Operação não entendida :(`)
