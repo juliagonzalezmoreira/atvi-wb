@@ -13,12 +13,13 @@ let execucao = true
 
 while (execucao) {
     console.log(`Opções:`);
+
     console.log(`1 - Cadastrar cliente`);
-    console.log(`2 - Listar todos os clientes`);
+    console.log(`2 - Opções de listagem de cliente`);
     console.log(`3 - Cadastrar produto`);
-    console.log(`4 - Listar todos os produtos`);
+    console.log(`4 - Opções de listagem de produto`);
     console.log(`5 - Cadastrar serviço`);
-    console.log(`6 - Listar todos os serviços`);
+    console.log(`6 - Opções de listagem de serviços`);
     console.log(`7 - Atualizar dados do cliente`);
     console.log(`8 - Excluir cliente`);
     
@@ -67,6 +68,7 @@ while (execucao) {
             let deletarCliente = new CadastroCliente(empresa.getClientes)
             deletarCliente.delete()
             break;
+            
         default:
             console.log(`Operação não entendida :(`)
     }
