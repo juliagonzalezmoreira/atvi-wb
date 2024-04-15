@@ -16,7 +16,7 @@ export default class CadastroCliente extends Cadastro {
         console.log(`\nInício do cadastro do cliente`);
         let nome = this.entrada.receberTexto(`Por favor informe o nome do cliente: `)
         let nomeSocial = this.entrada.receberTexto(`Por favor informe o nome social do cliente: `)
-        let generoCliente = this.entrada.receberNumero('Por favor infome o gênero do cliente (1 - Feminino | 2- Masculino): ')
+        let generoCliente = this.entrada.receberNumero('Por favor infome o gênero do cliente (1 - Feminino | 2- Masculino | 3- Outro): ')
         let genero;
         switch(generoCliente){
             case 1:
@@ -24,6 +24,9 @@ export default class CadastroCliente extends Cadastro {
                 break
             case 2:
                 genero = 'Masculino'
+                break
+            case 3:
+                genero = 'Outro'
                 break
         }
         let valor = this.entrada.receberTexto(`Por favor informe o número do cpf: `); //cpf
