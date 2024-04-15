@@ -32,12 +32,14 @@ var CadastroProduto = /** @class */ (function (_super) {
     CadastroProduto.prototype.cadastrar = function () {
         console.log("\nIn\u00EDcio do cadastro de um novo produto");
         var nomeProduto = this.entrada.receberTexto("Digite o nome do novo produto: ");
-        var produto = new produto_1.default();
+        var valorProduto = this.entrada.receberNumero('Por favor, digite o valor do produto:');
+        var quantidadeProduto = this.entrada.receberNumero('Por favor, digite a quantidade do produto:');
+        var produto = new produto_1.default(nomeProduto, valorProduto, quantidadeProduto);
         produto.nome = nomeProduto;
+        produto.valor = valorProduto;
+        produto.quantidade = quantidadeProduto;
         this.produtos.push(produto);
     };
-    CadastroProduto.prototype.update = function () { };
-    CadastroProduto.prototype.delete = function () { };
     return CadastroProduto;
 }(cadastro_1.default));
 exports.default = CadastroProduto;

@@ -34,8 +34,20 @@ var CadastroCliente = /** @class */ (function (_super) {
         console.log("\nIn\u00EDcio do cadastro do cliente");
         var nome = this.entrada.receberTexto("Por favor informe o nome do cliente: ");
         var nomeSocial = this.entrada.receberTexto("Por favor informe o nome social do cliente: ");
-        //cpf ⬇️
-        var valor = this.entrada.receberTexto("Por favor informe o n\u00FAmero do cpf: ");
+        var generoCliente = this.entrada.receberNumero('Por favor infome o gênero do cliente (1 - Feminino | 2- Masculino | 3- Outro): ');
+        var genero;
+        switch (generoCliente) {
+            case 1:
+                genero = 'Feminino';
+                break;
+            case 2:
+                genero = 'Masculino';
+                break;
+            case 3:
+                genero = 'Outro';
+                break;
+        }
+        var valor = this.entrada.receberTexto("Por favor informe o n\u00FAmero do cpf: "); //cpf
         var data = this.entrada.receberTexto("Por favor informe a data de emiss\u00E3o do cpf, no padr\u00E3o dd/mm/yyyy: ");
         var partesData = data.split('/');
         var ano = new Number(partesData[2].valueOf()).valueOf();
@@ -43,7 +55,7 @@ var CadastroCliente = /** @class */ (function (_super) {
         var dia = new Number(partesData[0].valueOf()).valueOf();
         var dataEmissao = new Date(ano, mes, dia);
         var cpf = new cpf_1.default(valor, dataEmissao);
-        var cliente = new cliente_1.default(nome, nomeSocial, cpf);
+        var cliente = new cliente_1.default(nome, nomeSocial, cpf, genero);
         this.clientes.push(cliente);
         console.log("\nCadastro conclu\u00EDdo :)\n");
     };

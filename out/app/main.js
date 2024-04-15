@@ -17,11 +17,11 @@ var execucao = true;
 while (execucao) {
     console.log("Op\u00E7\u00F5es:");
     console.log("1 - Cadastrar cliente");
-    console.log("2 - Listar todos os clientes");
+    console.log("2 - Op\u00E7\u00F5es de listagem de cliente");
     console.log("3 - Cadastrar produto");
-    console.log("4 - Listar todos os produtos");
+    console.log("4 - Op\u00E7\u00F5es de listagem de produto");
     console.log("5 - Cadastrar servi\u00E7o");
-    console.log("6 - Listar todos os servi\u00E7os");
+    console.log("6 - Op\u00E7\u00F5es de listagem de servi\u00E7os");
     console.log("7 - Atualizar dados do cliente");
     console.log("8 - Excluir cliente");
     console.log("0 - Sair");
@@ -57,8 +57,8 @@ while (execucao) {
             atualizarCliente.update();
             break;
         case 8:
-            var deletarClinte = new cadastroCliente_1.default(empresa.getClientes);
-            deletarClinte.delete();
+            var deletarCliente = new cadastroCliente_1.default(empresa.getClientes);
+            deletarCliente.delete();
             break;
         case 0:
             execucao = false;

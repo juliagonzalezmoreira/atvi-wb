@@ -32,12 +32,12 @@ var CadastroServico = /** @class */ (function (_super) {
     CadastroServico.prototype.cadastrar = function () {
         console.log("\nIn\u00EDcio do cadastro de um novo servi\u00E7o");
         var nomeServico = this.entrada.receberTexto("Digite o nome do novo servi\u00E7o: ");
-        var servicos = new servico_1.default();
+        var valorServico = this.entrada.receberNumero('Por favor, digite o valor do serviço:');
+        var servicos = new servico_1.default(nomeServico, valorServico);
         servicos.nome = nomeServico;
+        servicos.valor = valorServico;
         this.servicos.push(servicos);
     };
-    CadastroServico.prototype.update = function () { };
-    CadastroServico.prototype.delete = function () { };
     return CadastroServico;
 }(cadastro_1.default));
 exports.default = CadastroServico;

@@ -22,7 +22,6 @@ while (execucao) {
     console.log(`6 - Opções de listagem de serviços`);
     console.log(`7 - Atualizar dados do cliente`);
     console.log(`8 - Excluir cliente`);
-    
     console.log(`0 - Sair`);
 
     let entrada = new Entrada()
@@ -68,7 +67,10 @@ while (execucao) {
             let deletarCliente = new CadastroCliente(empresa.getClientes)
             deletarCliente.delete()
             break;
-            
+        case 0:
+            execucao = false;
+            console.log("At\u00E9 mais");
+            break;
         default:
             console.log(`Operação não entendida :(`)
     }
