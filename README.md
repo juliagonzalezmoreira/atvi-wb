@@ -8,16 +8,47 @@ Atividade ATVI-WB da aula de POO
   </i></b>
 </p>
 
-<p align="center">
-	<img alt="Tamanho do código no GitHub em bytes" src="https://img.shields.io/github/languages/code-size/juliagonzalezmoreira/atvi-wb?color=6272a4" />
-	<img alt="Linguagem principal" src="https://img.shields.io/github/languages/top/juliagonzalezmoreira/atvi-wb?color=6272a4" />
-</p>
+## 📍 Instruções 
 
+### Pré-Requisitos
+Para executar o projeto localmente, é necessário ter instalados em sua máquina os seguintes requisitos: [Node.js](https://nodejs.org/en), [React](https://react.dev/). Após a instalação, é preciso também instalar as dependências do arquivo package.json. Para isso, digite o comando npm install após seguir os passos anteriores.
+
+❗️| Certifique-se de que todas as ferramentas necessárias estejam instaladas em sua máquina local e, em seguida, prossiga com os seguintes passos. <br>
+
+### Instruções para executar o projeto em sua máquina:
+
+**0. Baixe os arquivos**
+
+```bash
+# Clone o repositorio
+$ git clone https://github.com/juliagonzalezmoreira/atvi-wb
+```
+
+**1. Instale as dependências**
+
+```bash
+npm install
+```
+
+**2. Compile e rode a aplicação**
+
+```bash
+npx tsc
+```
+```bash
+node ./out/app/main.js   
+````
 
 ## 🔧 Tecnologias
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)  
 
+  
+## 🔗 Referências
+- [Documentação React](https://react.dev/)
+- [Repositório com códgios auxiliares](https://github.com/gerson-pn/atvi-wb-typescript)
+
+  
 ## ✅ Feedback
 
 Caso tenha algum feedback, entre em contato!
